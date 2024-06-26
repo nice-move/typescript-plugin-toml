@@ -1,0 +1,45 @@
+{
+  "name": "plugin",
+  "version": "0.0.0",
+  "license": "MIT",
+  "keywords": [],
+  "type": "module",
+  "scripts": {
+    "lint:staged": "nice-move lint staged",
+    "lint:type": "tsc --noEmit",
+    "prepare": "nice-move git hooks"
+  },
+  "devDependencies": {
+    "@bring-it/npm": "^0.5.5",
+    "@nice-move/all-in-base": "^0.1.3",
+    "esbuild": "^0.21.5",
+    "eslint": "^8.57.0",
+    "garou": "^0.7.6",
+    "prettier": "^3.3.2",
+    "stylelint": "^16.6.1",
+    "typescript": "~5.5.2"
+  },
+  "peerDependencies": {
+    "@types/node": "^20.14.9",
+    "typescript": "^5.5.2",
+    "typescript-plugin-config": "workspace:*"
+  },
+  "packageManager": "pnpm@9.4.0",
+  "engines": {
+    "node": "^18.12.0 || ^20.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "eslintConfig": {
+    "extends": "@nice-move/eslint-config-base"
+  },
+  "nice-move": {
+    "import-groups": "nice-move-preset"
+  },
+  "prettier": "@nice-move/prettier-config",
+  "stylelint": {
+    "extends": "@nice-move/stylelint-config"
+  }
+}

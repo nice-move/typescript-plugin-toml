@@ -1,0 +1,7 @@
+{
+  "extends": "@nice-move/tsconfig/node.json",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "Node10",
+  },
+}
